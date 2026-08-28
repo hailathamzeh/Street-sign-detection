@@ -1,0 +1,18 @@
+# Reproduction environment used for the modernized notebooks.
+# Python 3.10 is recommended for the combined TensorFlow and YOLOv5 workflow.
+ipykernel==6.29.5
+jupyterlab==4.2.5
+kaggle==1.6.17
+lime==0.2.0.1
+matplotlib==3.8.4
+numpy==1.26.4
+opencv-python==4.10.0.84
+pandas==2.2.3
+Pillow==10.4.0
+PyYAML==6.0.2
+scikit-image==0.24.0
+shap==0.46.0
+tensorflow==2.15.1
+torch==2.5.1
+torchvision==0.20.1
+

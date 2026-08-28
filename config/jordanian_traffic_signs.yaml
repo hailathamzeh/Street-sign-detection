@@ -1,0 +1,16 @@
+# Repository layout reference. The YOLO notebook writes a runtime copy with
+# JTS_DATASET_ROOT resolved to an absolute local path before training.
+path: ../data/Final_Dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: No Entry
+  1: Hump
+  2: Stop
+  3: Pedestrian Cross
+  4: No Stop
+  5: Give Way
+  6: Pass Either
+
