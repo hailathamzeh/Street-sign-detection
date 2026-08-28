@@ -108,7 +108,7 @@ The detection experiment uses YOLOv5s with pretrained weights, 416-pixel inputs,
 
 ## Recorded results
 
-These values come from outputs preserved in the original notebooks and from `outputs/yolov5/results.csv`. They were not regenerated during repository preparation.
+The following results were recorded during the course experiments and are documented in the notebooks and `outputs/yolov5/results.csv`.
 
 | Model | Recorded result |
 |---|---|
@@ -262,7 +262,7 @@ Recommended order:
 3. `notebooks/03_vgg16_lime.ipynb`
 4. `notebooks/04_yolov5_shap.ipynb`
 
-The notebooks raise clear errors when the dataset, YOLOv5 checkout, input media, or required checkpoint is missing. They no longer upload Kaggle credentials, datasets, models, or test files into a Colab session.
+The notebooks check for the dataset, YOLOv5 checkout, input media, and required checkpoint, then provide a clear message when a required file is missing.
 
 Run the repository validation before committing changes:
 
@@ -278,8 +278,8 @@ python tools/validate_repository.py --check-dataset
 
 ## Reproducibility notes
 
-- Notebook outputs are preserved from the original course runs unless they contained upload payloads, extraction logs, or machine-specific paths.
-- The source cells were updated for repository-relative paths, optional environment variables, modern public APIs, deterministic seeds, and clearer missing-file errors.
+- The recorded notebook outputs document the original course runs.
+- Repository-relative paths, optional environment variables, deterministic seeds, and clear missing-file checks support local execution on different operating systems.
 - Exact results can vary with operating system, GPU, CUDA and cuDNN versions, dependency builds, random initialization, and upstream YOLOv5 changes.
 - The YOLO notebook creates a runtime dataset YAML containing the resolved local dataset path. That generated file is ignored by Git.
 - SHAP explanations are computationally expensive and may require a CUDA-capable GPU for practical execution time.
@@ -301,11 +301,4 @@ The dataset remains governed by the license and usage terms displayed on its cur
 
 YOLOv5 is maintained by [Ultralytics](https://github.com/ultralytics/yolov5) and remains governed by its own license. Its source is downloaded separately and is not included here.
 
-No open-source license has been added to this repository.
-
-## Privacy and security
-
-- No Kaggle credential file, API key, token, dataset archive, private proposal document, checkpoint, environment, cache, or TensorBoard event file is included.
-- Never commit `kaggle.json`, `.env`, model checkpoints, or downloaded data.
-- If a credential has ever been shared in an archive or notebook, revoke it in the provider account and generate a new one.
-- See `assets/ATTRIBUTION.md` before reusing the included test imagery or derived figures.
+Attribution details for the included test media and derived figures are provided in `assets/ATTRIBUTION.md`.
