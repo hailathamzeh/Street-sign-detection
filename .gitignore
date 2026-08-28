@@ -1,0 +1,71 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+kaggle.json
+**/kaggle.json
+*.pem
+*.p12
+*.key
+
+# External dataset files
+data/*
+!data/README.md
+
+# Model checkpoints and exports
+models/*
+!models/README.md
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.tflite
+
+# Downloaded archives and databases
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated training and inference output
+runs/
+**/runs/
+events.out.tfevents*
+outputs/yolov5/*
+!outputs/yolov5/README.md
+!outputs/yolov5/results.csv
+!outputs/yolov5/hyperparameters.yaml
+
+# Downloaded third-party source
+external/
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*~
+
